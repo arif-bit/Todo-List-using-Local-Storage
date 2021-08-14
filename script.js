@@ -74,6 +74,22 @@ function edittask(index) {
   savetaskbtn.style.display = "inline";
 }
 
+
+
+function completetask(index){
+    let webtask = localStorage.getItem("localtask");
+    let taskobj  = JSON.parse(webtask);
+    taskobj [index] = '<span style="text-decoration:line-through">' + taskobj [index] + '</span>';
+    let addedtasklist = document.getElementById("addedtasklist");
+    addedtasklist.addEventListener("click", function(e){
+        console.log(addedtasklist)
+    })
+    localStorage.setItem("localtask", JSON.stringify(taskobj));
+    showtask();
+} 
+
+
+
 let savetaskbtn = document.getElementById("savetaskbtn");
 savetaskbtn.addEventListener("click", function () {
   let webtask = localStorage.getItem("localtask");
