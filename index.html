@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="container bg-light">
+    <header class="bg-primary mb-3 mt-2">
+        <div class="container">
+            <div class="row rounded rounded-3 shadow border-danger">
+                <div class="col-sm-12">
+                    <nav class="navbar justify-content-between">
+                        <a class="navbar-brand text-white">Todo List</a>
+                        <form class="d-flex">
+                            <input class="form-control m-1 mr-sm-2" type="search" placeholder="Search"
+                                aria-label="Search" id="searchtextbox" />
+                            
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="todo-outer">
+        <div class="container bg-warning">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-12">
+                    <h1 class="display-5 text-black-50 mb-2 mt-2">
+                        Welcome in Todo List Application
+                    </h1>
+                    <div class="todo-inner">
+                        <div class="form-row">
+                            <div class="col-8 mr-sm-2">
+                                <input type="text" class="form-control" placeholder="Enter your task"
+                                    id="addtaskinput" />
+                                <input type="hidden" id="saveindex" />
+                            </div>
+                            <button type="button" class="btn btn-success mr-sm-2 mt-2" id="addtaskbtn">
+                                Add Task
+                            </button>
+                            <button type="button" class="btn btn-success mr-sm-2 mt-2" id="savetaskbtn"
+                                style="display: none;">
+                                Save Task
+                            </button>
+                            <button type="button" id="deleteallbtn" class="btn btn-danger mt-2">
+                                Delete All
+                            </button>
+                        </div>
+
+                        <div class="to-do-output">
+                            <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                                <!-- <tr class="justify-content-center align-item-center">
+                    <th scope="row" class="fs-2">1</th>
+                    <td class="fs-3">value</td>
+                    <td>
+                      <button
+                        type="button"
+                        onclick="edittask()"
+                        class="text-dark btn btn-light mt-1"
+                      >
+                        <i class="fa fa-edit"></i> Edit
+                      </button>
+                    </td>
+                    <td>
+                      <button type="button" class="text-dark btn btn-info mt-1">
+                        <i class="fa fa-check-square"></i> Complete
+                      </button>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        onclick="deleteitem()"
+                        class="text-dark btn btn-secondary mt-1"
+                      >
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </td>
+                  </tr> -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
